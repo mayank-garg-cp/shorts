@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: #f2f2f2;
+    min-height: 100%;
+    min-width: 100%;
+    background-color:  #E5E5E5;;
+  }
+  
+  
+  .container {
+    width: 100%;
+    margin: auto;
+    
+    height:100vh;
+  }
+  
+  .header{
+    background-color: #009AE0;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerShort{
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.logo{
+  width: 165px;
+  height:57px;
+}
+  .cards-container {
+    display: flex;
+    border-radius: 6px;
+    color: #333;
+    /* background: #eee; */
+    padding: 1rem;
+    /* box-shadow: 0 0 1rem #000 inset; */
+    overflow-x: auto;
+    position: relative;
+  }
+  
+  .cards-container ::-webkit-scrollbar {
+    display: none;
+  }
+  .card {
+      height:70vh;
+      min-width:30%;
+      max-width: 50%;
+    flex: 1 0 250px;
+    box-shadow: 0 1px 1rem -4px #000;
+    background: #fff;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+position:relative
+   
+  }
+  .card_img {
+    width: 100%;
+    height: 300px;
+    object-fit: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 1rem -4px #000;
+   transform: scale(1.05);
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  .card-content > div{
+    text-align: justify;
+    margin-top: 0.2rem;
+    white-space:pre-wrap;
+  }
+
+  .emptyCard{
+    border: 10px solid #b2e5fc;
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color:#b2e5fc;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding:2px;
+
+  }
+  .backButton{
+    margin-right: 7px;
+    padding: 0px;
+    outline: none;
+    display: flex;
+    border: none;
+    background: none;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    left:10px;
+    top:17px
+  }
+  @media screen and (max-width: 625px) {
+    .container {
+      width: 100%
+    }
+    
+    .cards-container {
+      padding: .5rem;
+    }
+    
+    .card {
+      margin: 2.5rem;
+      height:74vh;
+      min-width:300px;
+    }
+
+    .card_img {
+        width: 300px;
+        height: 250px;
+        object-fit: center;
+      }
+  }

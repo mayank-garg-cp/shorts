@@ -1,0 +1,39 @@
+.homePage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100 !important;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* animation: mymove 10s linear; */
+}
+
+
+.homePageLogo{
+    width: 250px;
+  height:90px;
+}
+
+.footer{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    z-index: 100;
+    color:black;
+    font-size: 17px;
+
+}
+@keyframes mymove {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

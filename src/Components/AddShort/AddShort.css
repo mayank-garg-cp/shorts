@@ -1,0 +1,71 @@
+.addShort {
+  width: 70%;
+  height: 50vh;
+  padding: 18px 20px;
+  text-align: left;
+  border: 1px solid #d2d2d2;
+  background: #ffffff;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.87);
+  z-index: 100;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.addShort > h3 {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid #d2d2d2; */
+}
+
+.shortGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.shortGroup >input {
+    margin: 8px;
+  }
+
+.shortDesc {
+  width: 100%;
+  height: 40%;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 1rem;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 6px 0px 16px 0px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 625px) {
+  .addShort {
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .shortGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .shortGroup >input {
+    margin: 0px;
+    margin-bottom:10px;
+    margin-top: 5px;
+  }
+}
